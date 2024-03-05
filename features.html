@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+ 		<link rel="stylesheet" href="styles.css">
+		<script src="scripts.js"></script>
+		<title>Features</title>
+		<link rel="icon" href="ressources/icon.png">
+	</head>
+	<body>
+		<header>
+			<div id="sideNavigation" class="sidenav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<a href="home.html">Home</a>
+				<a href="features.html" class="actuel">Features</a>
+				<a href="issues.html">Issues</a>
+				<a href="contacts.html">Contact Us</a>
+			  </div>
+			  <nav class="topnav">
+				<a href="#" onclick="openNav()">
+				  <svg width="30" height="30" id="icoOpen">
+					  <path d="M0,5 30,5" stroke="#070c43" stroke-width="5"/>
+					  <path d="M0,14 30,14" stroke="#070c43" stroke-width="5"/>
+					  <path d="M0,23 30,23" stroke="#070c43" stroke-width="5"/>
+				  </svg>
+				</a>
+			  </nav>
+			<h1>Features</h1>
+			<button> <a href="home.html">Home</a></button>
+		</header>
+		
+		<p  class="p_box">
+			Smart Bright Home offers a range of features that make your light automation easy, 
+			convenient, and fun. Here are some of the benefits you can enjoy with our system:
+		</p>
+
+
+		<div  class="p_box">
+			<img id="vid1" class="right" src="ressources/video.png" alt="Italian Trulli">
+			<h2>Remote control:</h2> 
+			<p>
+			You can turn on, off, dim, or change the color of your light from your smartphone, tablet, laptop, or voice assistant. You can also monitor your light usage and energy consumption from anywhere.
+			</p>
+			<button type="button" onclick="alert('lights have been turned On!')">Turn lights On</button>
+			<button type="button" onclick="alert('lights have been turned Off!')">Turn lights Off</button>
+		</div>
+		<div  class="p_box">
+			<img id="vid1" class="left" src="ressources/schedule.jpg" alt="Italian Trulli">
+			<h2>Scheduling:</h2> 
+			<p>
+			You can set up timers and routines for your light to match your daily activities. For example, you can have your light wake you up gently in the morning, turn off automatically when you leave home, or create a relaxing ambiance when you come back.
+			</p>
+			<button type="button" onclick="alert('Blinds have been rolled down!')"> ^ Blinds down ^ </button>
+			<button type="button" onclick="alert('blinds have been rolled up!')">v Blinds up v </button>
+		</div>
+		<div class="p_box">
+			<img id="vid1" class="right" src="ressources/scenes.jpg" alt="Italian Trulli">
+			<h2>Scenes:</h2>
+			<p>
+				You can create different scenes for different occasions, such as movie night, dinner party, or bedtime.
+			</p>
+			<div class="color-picker">
+				<div id="color-wheel"></div>
+				<div id="selected-color"></div>
+			</div>
+			<script src="https://cdn.jsdelivr.net/npm/tinycolor2@1.4.2/dist/tinycolor-min.js"></script>
+			<p>Try for yourself (place cursor on the RGB circle to change color)</p>
+		</div>
+		</div>
+		<div  class="p_box">
+			<img id="vid1" class="left" src="https://cdn.sanity.io/images/ajwvhvgo/production/c07f8bc2fde8b4b5dc88faf37223e427ee4e94b3-500x279.png?w=653&q=80&fit=max&auto=format" alt="Italian Trulli">
+			<h2>Sensors:</h2> 
+			<p>
+			You can integrate your light with other smart devices, such as motion sensors, cameras, or thermostats. This way, you can have your light react to changes in your environment, such as motion, temperature, or weather.
+			</p>
+		</div>
+
+	</body>
+</html>

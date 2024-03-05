@@ -1,0 +1,234 @@
+@import url('https://fonts.cdnfonts.com/css/adlam-display');
+
+body{
+    display: grid;
+    grid-template-columns: 100%;
+    font-family: "Segoe UI";
+    background-image: url("ressources/bg");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-attachment:fixed;
+    color: rgb(7, 12, 67);
+}
+p{ 
+    font-size: 20px;
+}
+.p_box{
+	text-align: justify;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+	margin: 15px;
+    box-shadow: 0 4px 8px 0 rgba(50, 50, 50, 0.6), 0 6px 20px 0 rgba(50, 50, 50, 0.6);
+}
+
+ul{
+    font-size: 20px;
+    text-align: justify;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 50px;
+}
+header{
+    height: 300px;
+    background-image: url("ressources/h_bg.jpeg");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    border-radius: 40px;
+    margin: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(50, 50, 50, 0.6), 0 6px 20px 0 rgba(50, 50, 50, 0.6);
+}
+h1{
+    font-size: 50px;
+    vertical-align: middle;
+    font-family: "ADLaM Display", "Segoe UI Black";
+    padding-top: 80px;
+}
+img{
+    border-radius: 40px;
+    padding: 10px;
+}
+button {
+    font-family: "Segoe UI";
+    font-size: 30px;
+    background-color:rgb(7, 12, 67);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition:all .5s ease;
+    &:hover{
+        & a{    
+            transition:all .5s ease;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+    }
+    &:active{
+        transition:all .5s ease;
+        background-color: #3d4795;
+    }
+  }
+#p_home
+{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    align-items: center;
+    & div p{
+        font-size: x-large;
+    }
+}
+#img1
+{
+    width: 300px;
+    height: auto;
+}
+#vid1
+{
+    width: 400px;
+    height: auto;
+}
+
+.right{
+    float: right;
+}
+.left{
+    float: left;
+}
+
+a, a:visited{
+    transition:all .5s ease;
+    color: #818181;
+    text-decoration: none;
+}
+.sidenav .actuel{
+    transition:all .5s ease;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.sidenav a:hover{
+    transition:all .5s ease;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.sidenav a:active{
+    transition:all .5s ease;
+    background-color: #3d4795;
+}
+
+
+
+
+
+  /* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: rgb(7, 12, 67);
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 30px;
+    display: block;
+    transition: 0.3s;
+}
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 36px;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+}
+.topnav a svg{
+    padding: 15px;
+    background-color: rgb(7, 12, 67);
+    border-radius: 10px;
+    transition:all .5s ease;
+    transform:rotate(0deg);
+    & path{
+        transition:all .5s ease;
+        stroke:#818181;
+    }
+    &:hover{
+        border-radius: 50%;
+        transition:all .5s ease;
+        transform:rotate(180deg);
+        & path{     
+            stroke: white;
+        }   
+    }
+    &:active{
+        background-color: #3d4795;
+    }
+}
+
+
+
+.body1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .color-picker {
+    position: relative;
+  }
+  
+  #color-wheel {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: conic-gradient(
+      from 0deg,
+      red,
+      yellow,
+      lime,
+      aqua,
+      blue,
+      magenta,
+      red
+    );
+    transform: rotate(-90deg);
+  }
+  
+  #selected-color {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ffffff;
+    transform: translate(-50%, -50%);
+    border: 2px solid #000000;
+  }
